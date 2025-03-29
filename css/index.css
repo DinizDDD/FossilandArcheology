@@ -35,12 +35,15 @@
 }
 
 .book{    
-    margin: auto;
-    margin-top: 50px;
-    width: 75%;
+    height: 850px;
+    width: 100%;
+    background-color: rgb(0, 0, 0);
 
     img{
-        width: 100%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+        width: 75%;
         border-radius: 120px;
     }
 
