@@ -1,5 +1,11 @@
-.topo{
-    background-color: #ffffff;
+
+:root {
+  --top-bg: #f5f5f5;
+
+}
+
+.topo{  
+    background-color: var(--top-bg);
 }
 
 .logos{
