@@ -3,36 +3,36 @@
   
 }
 
-.banner-div{
-    background-color: var(--top-bg);
-    height: 840px;
-}
-
-.cards{
-    width: 80%;
-    margin: auto;
-    margin-top: 70px;
-    display: flex;
-}
-
-.card{
-    width: 30%;
-    margin: auto;
-    transition: all .2s ease-in-out; 
-
-    .card-body{
-        height: 200px;
+    .banner-div{
+        background-color: var(--top-bg);
+        height: 840px;
     }
 
-    img{
-        height: 400px; 
-        object-fit: cover;
+    .cards{
+        width: 80%;
+        margin: auto;
+        margin-top: 70px;
+        display: flex;
     }
-}
 
-.card:hover{
-    transform: scale(1.01); 
-}
+    .card{
+        width: 30%;
+        margin: auto;
+        transition: all .2s ease-in-out; 
+
+        .card-body{
+            height: 200px;
+        }
+
+        img{
+            height: 400px; 
+            object-fit: cover;
+        }
+    }
+
+    .card:hover{
+        transform: scale(1.01); 
+    }
 
 :root{
     --topmg-book: 10%;
@@ -40,40 +40,47 @@
     --textsize-book: 23px;
 }
 
-.book{
-    width: 50%;
-    margin: auto;
-    margin-top: 30px;  
-    position: relative;
-    color: white;
+    .book{
+        width: 50%;
+        margin: auto;
+        margin-top: 30px;  
+        position: relative;
+        color: white;
 
-    .booktext-right{
-        width: var(--textwidth-book);
-        position: absolute;
-        text-align: center;
-        font-size: var(--textsize-book);
-        top: var(--topmg-book);
-        right:4%;
-        color: black;
+        .booktext-right{
+            width: var(--textwidth-book);
+            position: absolute;
+            text-align: center;
+            font-size: var(--textsize-book);
+            top: var(--topmg-book);
+            right:4%;
+            color: black;
+        }
+
+        .booktext-left{
+            width: var(--textwidth-book);
+            position: absolute;
+            text-align: center;
+            font-size: var(--textsize-book);
+            top: var(--topmg-book);
+            left: 4%;
+            color: black;
+        }
+
+        img{
+            display: block;
+            width: 100%;
+        }
     }
 
-    .booktext-left{
-        width: var(--textwidth-book);
-        position: absolute;
-        text-align: center;
-        font-size: var(--textsize-book);
-        top: var(--topmg-book);
-        left: 4%;
-        color: black;
+    h2{
+        margin-top: 30px;
     }
 
-    img{
-        display: block;
-        width: 100%;
+    @media screen and (min-width: 320px) {
+
+        .book{
+            display: none;
+        }
+
     }
-
-}
-
-h2{
-    margin-top: 30px;
-}
