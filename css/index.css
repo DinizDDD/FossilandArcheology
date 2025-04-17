@@ -34,17 +34,42 @@
     transform: scale(1.01); 
 }
 
-.book{    
-    height: 850px;
-    width: 100%;
-    background-color: rgb(0, 0, 0);
+:root{
+    --topmg-book: 10%;
+    --textwidth-book: 44%;
+    --textsize-book: 23px;
+}
+
+.book{
+    width: 50%;
+    margin: auto;
+    margin-top: 30px;  
+    position: relative;
+    color: white;
+
+    .booktext-right{
+        width: var(--textwidth-book);
+        position: absolute;
+        text-align: center;
+        font-size: var(--textsize-book);
+        top: var(--topmg-book);
+        right:4%;
+        color: black;
+    }
+
+    .booktext-left{
+        width: var(--textwidth-book);
+        position: absolute;
+        text-align: center;
+        font-size: var(--textsize-book);
+        top: var(--topmg-book);
+        left: 4%;
+        color: black;
+    }
 
     img{
-        margin-left: auto;
-        margin-right: auto;
         display: block;
-        width: 75%;
-        border-radius: 120px;
+        width: 100%;
     }
 
 }
