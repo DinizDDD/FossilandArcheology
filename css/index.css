@@ -5,7 +5,23 @@
 
     .banner-div{
         background-color: var(--top-bg);
-        height: 840px;
+        margin: auto;  
+        text-align: center;
+
+
+        .banner{
+            width: 95%;
+        }
+    }
+
+    .tinybanner-div{
+        background-color: var(--top-bg);
+        margin: auto;  
+        text-align: center;
+
+        .tiny_banner{
+            width: 95%;
+        }
     }
 
     .cards{
@@ -13,22 +29,24 @@
         margin: auto;
         margin-top: 70px;
         display: flex;
+
+        .card{
+            width: 30%;
+            margin: auto;
+            transition: all .2s ease-in-out; 
+    
+            .card-body{
+                height: 200px;
+            }
+    
+            img{
+                height: 400px; 
+                object-fit: cover;
+            }
+        }
     }
 
-    .card{
-        width: 30%;
-        margin: auto;
-        transition: all .2s ease-in-out; 
 
-        .card-body{
-            height: 200px;
-        }
-
-        img{
-            height: 400px; 
-            object-fit: cover;
-        }
-    }
 
     .card:hover{
         transform: scale(1.01); 
@@ -73,14 +91,29 @@
         }
     }
 
-    h2{
-        margin-top: 30px;
-    }
-
-    @media screen and (max-width: 600px) {
+    @media screen and (min-width: 320px) and (max-width: 600px) {
 
         .book{
             display: none;
         }
 
+        .cards{
+            display: block;
+            width: 90%;
+
+            .card{
+                width: 100%;
+                margin-top: 70px;
+    
+                .card-body{
+                    height: auto;
+                }
+        
+                img{
+                    height: 200px; 
+                    object-fit: cover;
+                }
+            }
+        }
+            
     }

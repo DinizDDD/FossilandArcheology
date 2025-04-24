@@ -22,14 +22,6 @@
     }
   }  
 
-  .bannerindex{
-    align-items: center;
-  }
-
-  .banner {
-    width: 100%;
-  }   
-
   .nav-item{
     display: flex;
     align-items: center;
@@ -53,18 +45,12 @@
       color: white;
   }
 
-
-  .banner-div{
-    margin: auto;  
-    text-align: center;
-
-    img{
-      width: 95%;
-      height: 810px;
-    }
-  }
-
+  @media screen and (min-width: 320px) and (max-width: 600px) {
     
+    .logoimg{
+      wi
+    }
 
+  }
 
 
