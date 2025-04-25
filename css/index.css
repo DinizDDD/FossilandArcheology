@@ -23,17 +23,23 @@
 
         .card{
             width: 35%;
+            height: 500px;
             margin: auto;
-            transition: all .2s ease-in-out; 
+            border-radius: 5px;
+            transition: 0.3s;
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     
             img{
                 height: 400px; 
                 object-fit: cover;
+                border-radius: 5px 5px 0 0;
+            }
+
+            h4{
+                margin-top: 5px;
             }
         }
     }
-
-
 
     .card:hover{
         transform: scale(1.01); 
@@ -90,14 +96,11 @@
 
             .card{
                 width: 100%;
-                margin-top: 70px;
-    
-                .card-body{
-                    height: auto;
-                }
+                margin-top: 60px;
+                height: auto;
         
                 img{
-                    height: 200px; 
+                    height: auto; 
                     object-fit: cover;
                 }
             }
