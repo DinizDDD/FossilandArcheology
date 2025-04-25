@@ -16,6 +16,7 @@
 
     .cards{
         width: 80%;
+        height: auto;
         margin: auto;
         margin-top: 70px;
         display: flex;
@@ -24,10 +25,6 @@
             width: 35%;
             margin: auto;
             transition: all .2s ease-in-out; 
-    
-            .card-body{
-                height: 200px;
-            }
     
             img{
                 height: 400px; 
@@ -49,7 +46,7 @@
 }
 
     .book{
-        width: 60%;
+        width: 50%;
         margin: auto;
         margin-top: 30px;  
         position: relative;
@@ -108,14 +105,34 @@
             
     }
 
-    @media screen and (max-width: 650px){
+    @media screen and (min-width: 600px) and (max-width: 790px) {
 
-        .book{
-            display: none;
+        .cards{
+            display: flex;
+            gap: 30px;
+            width: 90%;
+
+            .card{
+                width: 95%;
+                margin-top: 30px;
+        
+                img{
+                    height: 200px; 
+                    object-fit: cover;
+                }
+            }
         }
 
-    }
 
-    @media screen and (min-width: 650px) {
+
+
+
+}
+
+@media screen and (min-width: 650px) and (max-width: 650px){
+
+    .book{
+        display: none;
+    }
 
 }
