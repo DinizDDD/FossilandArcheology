@@ -91,7 +91,7 @@
         }
     }
 
-    @media screen and (min-width: 320px) and (max-width: 600px) {
+    @media screen and (min-width: 320px) and (max-width: 649px) {
 
         .book{
             display: none;
@@ -117,3 +117,21 @@
         }
             
     }
+
+    @media screen and (min-width: 650px) and (max-width: 1000px) {
+
+        .book{
+            width: 95%;
+    
+            .booktext-right{
+                font-size: 100%;
+                top: 30px;
+            }   
+    
+            .booktext-left{
+                font-size: 100%;
+                top: 30px;
+            }
+
+    }
+}
