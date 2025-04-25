@@ -14,16 +14,6 @@
         }
     }
 
-    .tinybanner-div{
-        background-color: var(--top-bg);
-        margin: auto;  
-        text-align: center;
-
-        .tiny_banner{
-            width: 95%;
-        }
-    }
-
     .cards{
         width: 80%;
         margin: auto;
@@ -31,7 +21,7 @@
         display: flex;
 
         .card{
-            width: 30%;
+            width: 35%;
             margin: auto;
             transition: all .2s ease-in-out; 
     
@@ -59,7 +49,7 @@
 }
 
     .book{
-        width: 50%;
+        width: 60%;
         margin: auto;
         margin-top: 30px;  
         position: relative;
@@ -91,7 +81,7 @@
         }
     }
 
-    @media screen and (min-width: 320px) and (max-width: 649px) {
+    @media screen and (min-width: 320px) and (max-width: 600px) {
 
         .book{
             display: none;
@@ -118,20 +108,14 @@
             
     }
 
-    @media screen and (min-width: 650px) and (max-width: 1000px) {
+    @media screen and (max-width: 650px){
 
         .book{
-            width: 95%;
-    
-            .booktext-right{
-                font-size: 100%;
-                top: 30px;
-            }   
-    
-            .booktext-left{
-                font-size: 100%;
-                top: 30px;
-            }
+            display: none;
+        }
 
     }
+
+    @media screen and (min-width: 650px) {
+
 }
