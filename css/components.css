@@ -28,7 +28,6 @@ nav{
 
     .left{
         width: 25%;
-        background-color: aqua;
 
         img{
             width: 30%;
@@ -38,12 +37,10 @@ nav{
     .mid{
         display: flex;
         width: 50%;
-        background-color: blue;
     }
 
     .right{
         display: flex;
         width: 25%;
-        background-color: brown;
     }
 }
