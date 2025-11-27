@@ -10,3 +10,15 @@
         display: block;
     }
 }
+
+.banner-text{
+    width: 100%;
+    position: absolute; 
+    top: 50%;
+    margin: auto;
+
+    h3{
+        text-align: center;
+        font-size: 30px;
+    }
+}
